@@ -1,90 +1,175 @@
 import Link from "next/link";
+import {
+  Clock,
+  FileText,
+  Layers,
+  ArrowRight,
+  Mail,
+  ClipboardList,
+  Send,
+  Shield,
+} from "lucide-react";
+import { MODES, SITE } from "@/lib/config";
+import { SiteHeader, SiteFooter } from "@/components/blind-test/SiteHeader";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100">
-      <main className="max-w-4xl mx-auto px-4 py-16 text-center">
-        <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-          Webアプリ開発を
-          <br />
-          <span className="text-blue-600">今すぐ始めよう</span>
-        </h1>
-        
-        <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
-          Next.js 15 + TypeScript + Tailwind CSS v4 で構築された
-          <br />
-          モダンなWebアプリケーション開発テンプレート
-        </p>
+    <div className="page-shell">
+      <SiteHeader />
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-          <Link
-            href="/api"
-            className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
-          >
-            API Routes を見る
-          </Link>
-          <a
-            href="https://github.com/yourusername/your-repo"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-gray-700 bg-white hover:bg-gray-50 border-2 border-gray-300 rounded-lg transition-colors"
-          >
-            GitHub で見る
-          </a>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-          <FeatureCard
-            title="🚀 高速開発"
-            description="Turbopack対応で爆速のHMR。開発体験が劇的に向上します。"
-          />
-          <FeatureCard
-            title="🔒 型安全"
-            description="TypeScriptによる完全な型安全性。バグを事前に防ぎます。"
-          />
-          <FeatureCard
-            title="🎨 モダンUI"
-            description="Tailwind CSS v4 + shadcn/ui で美しいUIを素早く構築。"
-          />
-          <FeatureCard
-            title="📱 レスポンシブ"
-            description="モバイルファースト設計。あらゆるデバイスで最適表示。"
-          />
-          <FeatureCard
-            title="🔌 API統合"
-            description="Route HandlersとServer Actionsで簡単にAPI構築。"
-          />
-          <FeatureCard
-            title="⚡ 最適化済み"
-            description="パフォーマンスとSEOを考慮した設定が最初から完備。"
-          />
-        </div>
-
-        <div className="mt-16 p-8 bg-white rounded-lg border-2 border-gray-200">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            次のステップ
+      <main className="page-main space-y-10">
+        {/* Hero */}
+        <section className="card-padded space-y-4 border-primary/20">
+          <span className="badge-primary">評価者向け</span>
+          <h2 className="text-2xl md:text-3xl font-bold text-stone-900 leading-snug">
+            古文書転写の
+            <br className="md:hidden" />
+            読取評価にご協力ください
           </h2>
-          <div className="text-left max-w-2xl mx-auto space-y-3 text-gray-700">
-            <p>✅ <code className="bg-gray-100 px-2 py-1 rounded">app/page.tsx</code> を編集してこのページをカスタマイズ</p>
-            <p>✅ <code className="bg-gray-100 px-2 py-1 rounded">app/api/</code> に新しいAPI Routeを追加</p>
-            <p>✅ <code className="bg-gray-100 px-2 py-1 rounded">npx simple-shadcn-cli add button</code> でUIコンポーネントを追加</p>
-            <p>✅ <code className="bg-gray-100 px-2 py-1 rounded">memories/</code> フォルダのワークフローを確認</p>
+          <p className="section-lead max-w-prose">
+            中世写本から抽出した転写テキストを読み、「手順・処方として読めるか」を判定していただく独立評価です。
+            専門知識は不要で、約15分から参加できます。
+          </p>
+          <div className="flex flex-wrap gap-3 pt-1">
+            <div className="flex items-center gap-2 text-sm text-stone-600">
+              <Shield className="w-4 h-4 text-primary" />
+              盲検中立（仮説非開示）
+            </div>
+            <div className="flex items-center gap-2 text-sm text-stone-600">
+              <ClipboardList className="w-4 h-4 text-primary" />
+              正解・不正解の試験ではありません
+            </div>
           </div>
-        </div>
+        </section>
+
+        {/* Steps */}
+        <section className="space-y-4">
+          <h2 className="section-title">3ステップで完了</h2>
+          <ol className="space-y-3">
+            {[
+              {
+                icon: Layers,
+                text: "コースを選ぶ（下の3つから1つ）",
+              },
+              {
+                icon: FileText,
+                text: "転写テキストを1行ずつ読み、質問に答える",
+              },
+              {
+                icon: Send,
+                text: "結果をダウンロードしてメールで送る",
+              },
+            ].map(({ icon: Icon, text }, i) => (
+              <li key={text} className="card-padded flex items-start gap-4">
+                <span className="step-number">{i + 1}</span>
+                <div className="flex items-start gap-3 pt-1.5 min-w-0">
+                  <Icon
+                    className="w-5 h-5 text-primary shrink-0 mt-0.5"
+                    aria-hidden
+                  />
+                  <span className="text-base text-stone-800">{text}</span>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        {/* Courses */}
+        <section className="space-y-4">
+          <h2 className="section-title">コースを選ぶ</h2>
+          <div className="grid gap-4">
+            {(
+              Object.entries(MODES) as [
+                keyof typeof MODES,
+                (typeof MODES)[keyof typeof MODES],
+              ][]
+            ).map(([key, cfg]) => (
+              <Link
+                key={key}
+                href={`/evaluate?mode=${key}`}
+                className="group card-padded hover:border-primary transition-all block"
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <div className="space-y-3 min-w-0">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <h3 className="text-lg md:text-xl font-bold text-stone-900">
+                        {cfg.label}
+                      </h3>
+                      {key === "pilot-lite" && (
+                        <span className="badge-accent">おすすめ</span>
+                      )}
+                    </div>
+                    <p className="text-sm md:text-base text-stone-600">
+                      {cfg.description}
+                    </p>
+                    <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-stone-500">
+                      <span className="inline-flex items-center gap-1.5">
+                        <FileText className="w-4 h-4 text-stone-400" />
+                        {cfg.lines}行
+                      </span>
+                      <span className="inline-flex items-center gap-1.5">
+                        <Clock className="w-4 h-4 text-stone-400" />
+                        {cfg.minutes}
+                      </span>
+                      <span className="inline-flex items-center gap-1.5">
+                        <Layers className="w-4 h-4 text-stone-400" />
+                        {cfg.lite ? "質問2つのみ" : "語の位置指定あり"}
+                      </span>
+                    </div>
+                  </div>
+                  <span className="flex items-center justify-center w-10 h-10 rounded-full border-2 border-primary bg-primary-light shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
+                    <ArrowRight className="w-5 h-5 text-primary group-hover:text-white" />
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        {/* Rules */}
+        <section className="alert-warning space-y-3">
+          <p className="font-bold text-amber-950 text-base">評価中の注意</p>
+          <ul className="text-sm text-amber-900 space-y-2">
+            <li className="flex gap-2">
+              <span className="font-bold shrink-0">1.</span>
+              転写や行IDをウェブ検索しないでください
+            </li>
+            <li className="flex gap-2">
+              <span className="font-bold shrink-0">2.</span>
+              正解・不正解の試験ではありません
+            </li>
+            <li className="flex gap-2">
+              <span className="font-bold shrink-0">3.</span>
+              専門知識は不要です。素朴な読み取りが最も重要です
+            </li>
+            <li className="flex gap-2">
+              <span className="font-bold shrink-0">4.</span>
+              途中でブラウザを閉じても、同じコースから再開できます
+            </li>
+          </ul>
+        </section>
+
+        {/* Contact */}
+        <section className="card-padded space-y-3">
+          <p className="font-bold text-stone-900 inline-flex items-center gap-2">
+            <Mail className="w-5 h-5 text-primary" />
+            お問い合わせ
+          </p>
+          <p className="text-sm text-stone-700">
+            {SITE.researcher}
+            <br />
+            {SITE.affiliation}
+          </p>
+          <a
+            href={`mailto:${SITE.email}`}
+            className="inline-block text-primary font-medium underline underline-offset-2 break-all"
+          >
+            {SITE.email}
+          </a>
+        </section>
       </main>
 
-      <footer className="mt-auto py-8 text-center text-gray-500">
-        <p>Built with ❤️ using Next.js 15</p>
-      </footer>
-    </div>
-  );
-}
-
-function FeatureCard({ title, description }: { title: string; description: string }) {
-  return (
-    <div className="p-6 bg-white rounded-lg border border-gray-200 hover:border-blue-300 transition-colors">
-      <h3 className="text-xl font-bold text-gray-900 mb-2">{title}</h3>
-      <p className="text-gray-600">{description}</p>
+      <SiteFooter />
     </div>
   );
 }

@@ -1,11 +1,18 @@
-import "../lib/fonts/_active.css";
-import "../lib/fonts/_vars.css";
+import { Noto_Sans_JP } from "next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
 
+const notoSansJP = Noto_Sans_JP({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-noto",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "DefaultSettingWebApp - Webアプリ開発テンプレート",
-  description: "Next.js 15 + TypeScript + Tailwind CSS v4 で構築されたモダンなWebアプリケーション開発テンプレート",
+  title: "古文書転写 読取評価 | 独立評価（盲検）",
+  description:
+    "中世写本転写テキストの独立評価。専門知識不要・約15分から参加できます。",
 };
 
 export default function RootLayout({
@@ -14,15 +21,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja">
+    <html lang="ja" className={notoSansJP.variable}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body
-        className="antialiased font-body"
-      >
-        {children}
-      </body>
+      <body className={`${notoSansJP.className} antialiased`}>{children}</body>
     </html>
   );
 }

@@ -1,0 +1,525 @@
+{
+  "version": "1.1-pilot",
+  "title": "Medieval Transcription Reading Challenge (10-line pilot)",
+  "blind_neutral": true,
+  "pilot": true,
+  "full_challenge_lines": 44,
+  "line_count": 10,
+  "instructions_summary": "See blind_challenge_instructions_pilot_neutral.md",
+  "lines": [
+    {
+      "challenge_id": "BC-P01",
+      "line_ref": "BL-P01",
+      "section_code": "section_D",
+      "token_count": 9,
+      "eva": "olkor chdaiin cholkaiin qokeedy qoky chey lchedy chedy alod",
+      "tokens": [
+        {
+          "pos": 1,
+          "eva": "olkor"
+        },
+        {
+          "pos": 2,
+          "eva": "chdaiin"
+        },
+        {
+          "pos": 3,
+          "eva": "cholkaiin"
+        },
+        {
+          "pos": 4,
+          "eva": "qokeedy"
+        },
+        {
+          "pos": 5,
+          "eva": "qoky"
+        },
+        {
+          "pos": 6,
+          "eva": "chey"
+        },
+        {
+          "pos": 7,
+          "eva": "lchedy"
+        },
+        {
+          "pos": 8,
+          "eva": "chedy"
+        },
+        {
+          "pos": 9,
+          "eva": "alod"
+        }
+      ]
+    },
+    {
+      "challenge_id": "BC-P02",
+      "line_ref": "BL-P02",
+      "section_code": "section_B",
+      "token_count": 9,
+      "eva": "lsho qokey lshedy lshedy chedy qolky lchedal qol otar",
+      "tokens": [
+        {
+          "pos": 1,
+          "eva": "lsho"
+        },
+        {
+          "pos": 2,
+          "eva": "qokey"
+        },
+        {
+          "pos": 3,
+          "eva": "lshedy"
+        },
+        {
+          "pos": 4,
+          "eva": "lshedy"
+        },
+        {
+          "pos": 5,
+          "eva": "chedy"
+        },
+        {
+          "pos": 6,
+          "eva": "qolky"
+        },
+        {
+          "pos": 7,
+          "eva": "lchedal"
+        },
+        {
+          "pos": 8,
+          "eva": "qol"
+        },
+        {
+          "pos": 9,
+          "eva": "otar"
+        }
+      ]
+    },
+    {
+      "challenge_id": "BC-P03",
+      "line_ref": "BL-P03",
+      "section_code": "section_B",
+      "token_count": 12,
+      "eva": "chey chckh shey qeeey chol lkain shedy qokeedy okain chedy okeed qokaloro",
+      "tokens": [
+        {
+          "pos": 1,
+          "eva": "chey"
+        },
+        {
+          "pos": 2,
+          "eva": "chckh"
+        },
+        {
+          "pos": 3,
+          "eva": "shey"
+        },
+        {
+          "pos": 4,
+          "eva": "qeeey"
+        },
+        {
+          "pos": 5,
+          "eva": "chol"
+        },
+        {
+          "pos": 6,
+          "eva": "lkain"
+        },
+        {
+          "pos": 7,
+          "eva": "shedy"
+        },
+        {
+          "pos": 8,
+          "eva": "qokeedy"
+        },
+        {
+          "pos": 9,
+          "eva": "okain"
+        },
+        {
+          "pos": 10,
+          "eva": "chedy"
+        },
+        {
+          "pos": 11,
+          "eva": "okeed"
+        },
+        {
+          "pos": 12,
+          "eva": "qokaloro"
+        }
+      ]
+    },
+    {
+      "challenge_id": "BC-P04",
+      "line_ref": "BL-P04",
+      "section_code": "section_C",
+      "token_count": 12,
+      "eva": "daiin shechy qokedy qokain chor chal chal chedy dain alal keedy otalys",
+      "tokens": [
+        {
+          "pos": 1,
+          "eva": "daiin"
+        },
+        {
+          "pos": 2,
+          "eva": "shechy"
+        },
+        {
+          "pos": 3,
+          "eva": "qokedy"
+        },
+        {
+          "pos": 4,
+          "eva": "qokain"
+        },
+        {
+          "pos": 5,
+          "eva": "chor"
+        },
+        {
+          "pos": 6,
+          "eva": "chal"
+        },
+        {
+          "pos": 7,
+          "eva": "chal"
+        },
+        {
+          "pos": 8,
+          "eva": "chedy"
+        },
+        {
+          "pos": 9,
+          "eva": "dain"
+        },
+        {
+          "pos": 10,
+          "eva": "alal"
+        },
+        {
+          "pos": 11,
+          "eva": "keedy"
+        },
+        {
+          "pos": 12,
+          "eva": "otalys"
+        }
+      ]
+    },
+    {
+      "challenge_id": "BC-P05",
+      "line_ref": "BL-P05",
+      "section_code": "section_B",
+      "token_count": 8,
+      "eva": "dchey lshl alched qokol chol otar chedy oky",
+      "tokens": [
+        {
+          "pos": 1,
+          "eva": "dchey"
+        },
+        {
+          "pos": 2,
+          "eva": "lshl"
+        },
+        {
+          "pos": 3,
+          "eva": "alched"
+        },
+        {
+          "pos": 4,
+          "eva": "qokol"
+        },
+        {
+          "pos": 5,
+          "eva": "chol"
+        },
+        {
+          "pos": 6,
+          "eva": "otar"
+        },
+        {
+          "pos": 7,
+          "eva": "chedy"
+        },
+        {
+          "pos": 8,
+          "eva": "oky"
+        }
+      ]
+    },
+    {
+      "challenge_id": "BC-P06",
+      "line_ref": "BL-P06",
+      "section_code": "section_B",
+      "token_count": 13,
+      "eva": "sheedy qokedy chedy chedy qokain chckhy olchy l ain shedy olaiin chedy qokey",
+      "tokens": [
+        {
+          "pos": 1,
+          "eva": "sheedy"
+        },
+        {
+          "pos": 2,
+          "eva": "qokedy"
+        },
+        {
+          "pos": 3,
+          "eva": "chedy"
+        },
+        {
+          "pos": 4,
+          "eva": "chedy"
+        },
+        {
+          "pos": 5,
+          "eva": "qokain"
+        },
+        {
+          "pos": 6,
+          "eva": "chckhy"
+        },
+        {
+          "pos": 7,
+          "eva": "olchy"
+        },
+        {
+          "pos": 8,
+          "eva": "l"
+        },
+        {
+          "pos": 9,
+          "eva": "ain"
+        },
+        {
+          "pos": 10,
+          "eva": "shedy"
+        },
+        {
+          "pos": 11,
+          "eva": "olaiin"
+        },
+        {
+          "pos": 12,
+          "eva": "chedy"
+        },
+        {
+          "pos": 13,
+          "eva": "qokey"
+        }
+      ]
+    },
+    {
+      "challenge_id": "BC-P07",
+      "line_ref": "BL-P07",
+      "section_code": "section_B",
+      "token_count": 13,
+      "eva": "chorshedy qoked okees al ar aiin ar ain chckheed lchedy shedy qolair chedy",
+      "tokens": [
+        {
+          "pos": 1,
+          "eva": "chorshedy"
+        },
+        {
+          "pos": 2,
+          "eva": "qoked"
+        },
+        {
+          "pos": 3,
+          "eva": "okees"
+        },
+        {
+          "pos": 4,
+          "eva": "al"
+        },
+        {
+          "pos": 5,
+          "eva": "ar"
+        },
+        {
+          "pos": 6,
+          "eva": "aiin"
+        },
+        {
+          "pos": 7,
+          "eva": "ar"
+        },
+        {
+          "pos": 8,
+          "eva": "ain"
+        },
+        {
+          "pos": 9,
+          "eva": "chckheed"
+        },
+        {
+          "pos": 10,
+          "eva": "lchedy"
+        },
+        {
+          "pos": 11,
+          "eva": "shedy"
+        },
+        {
+          "pos": 12,
+          "eva": "qolair"
+        },
+        {
+          "pos": 13,
+          "eva": "chedy"
+        }
+      ]
+    },
+    {
+      "challenge_id": "BC-P08",
+      "line_ref": "BL-P08",
+      "section_code": "section_B",
+      "token_count": 8,
+      "eva": "solkeedy sheckhy qokedy otal shedy otar olchedy cthdy",
+      "tokens": [
+        {
+          "pos": 1,
+          "eva": "solkeedy"
+        },
+        {
+          "pos": 2,
+          "eva": "sheckhy"
+        },
+        {
+          "pos": 3,
+          "eva": "qokedy"
+        },
+        {
+          "pos": 4,
+          "eva": "otal"
+        },
+        {
+          "pos": 5,
+          "eva": "shedy"
+        },
+        {
+          "pos": 6,
+          "eva": "otar"
+        },
+        {
+          "pos": 7,
+          "eva": "olchedy"
+        },
+        {
+          "pos": 8,
+          "eva": "cthdy"
+        }
+      ]
+    },
+    {
+      "challenge_id": "BC-P09",
+      "line_ref": "BL-P09",
+      "section_code": "section_D",
+      "token_count": 9,
+      "eva": "qokeol chol qodaiin chol cheody qokechy daiin ctheody dam",
+      "tokens": [
+        {
+          "pos": 1,
+          "eva": "qokeol"
+        },
+        {
+          "pos": 2,
+          "eva": "chol"
+        },
+        {
+          "pos": 3,
+          "eva": "qodaiin"
+        },
+        {
+          "pos": 4,
+          "eva": "chol"
+        },
+        {
+          "pos": 5,
+          "eva": "cheody"
+        },
+        {
+          "pos": 6,
+          "eva": "qokechy"
+        },
+        {
+          "pos": 7,
+          "eva": "daiin"
+        },
+        {
+          "pos": 8,
+          "eva": "ctheody"
+        },
+        {
+          "pos": 9,
+          "eva": "dam"
+        }
+      ]
+    },
+    {
+      "challenge_id": "BC-P10",
+      "line_ref": "BL-P10",
+      "section_code": "section_C",
+      "token_count": 13,
+      "eva": "sal sheal shedy okeedy qokeey l ol shedy pchor pchedy pol sheedy opalam",
+      "tokens": [
+        {
+          "pos": 1,
+          "eva": "sal"
+        },
+        {
+          "pos": 2,
+          "eva": "sheal"
+        },
+        {
+          "pos": 3,
+          "eva": "shedy"
+        },
+        {
+          "pos": 4,
+          "eva": "okeedy"
+        },
+        {
+          "pos": 5,
+          "eva": "qokeey"
+        },
+        {
+          "pos": 6,
+          "eva": "l"
+        },
+        {
+          "pos": 7,
+          "eva": "ol"
+        },
+        {
+          "pos": 8,
+          "eva": "shedy"
+        },
+        {
+          "pos": 9,
+          "eva": "pchor"
+        },
+        {
+          "pos": 10,
+          "eva": "pchedy"
+        },
+        {
+          "pos": 11,
+          "eva": "pol"
+        },
+        {
+          "pos": 12,
+          "eva": "sheedy"
+        },
+        {
+          "pos": 13,
+          "eva": "opalam"
+        }
+      ]
+    }
+  ]
+}
